@@ -1,0 +1,11 @@
+Predlog projekta za jovicica:
+    - koristiti ovu plocicu sto mi je dao ili discovery sa m7
+    - napraviti filtar u MATLAB-u, i upisati koeficijente na uC
+    - sa ulaza dobijati neke podatke, tipa mikrofon, ili prosledjivati sa PC-a
+    - raditi FFT filtra
+    - raditi FFT odbiraka koji se dobijaju
+    - mnoziti
+    - raditi inverznu FFT
+    - slati nazad podatke na PC
+Pitanje da li iskoristiti audio konektor koji postoji na DISCOVERY, ili ne.
+
