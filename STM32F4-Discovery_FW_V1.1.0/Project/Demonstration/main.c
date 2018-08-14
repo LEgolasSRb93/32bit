@@ -24,6 +24,8 @@
 #include "usbd_hid_core.h"
 #include "usbd_usr.h"
 #include "usbd_desc.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /** @addtogroup STM32F4-Discovery_Demo
   * @{
@@ -60,6 +62,10 @@ static uint32_t Demo_USBConfig(void);
 static void TIM4_Config(void);
 static void Demo_Exec(void);
 
+//lazarc
+#define FILTER_SIZE 121
+#define SAMPLES_SIZE 2016
+
 /* Private functions ---------------------------------------------------------*/
 
 /**
@@ -69,6 +75,41 @@ static void Demo_Exec(void);
   */
 int main(void)
 {
+  
+  FILE *file_filter, *file_sample;
+  float filter[FILTER_SIZE];
+  float samples[FILTER_SIZE];
+  
+  /**
+  * Reading filter samples to buffer
+  */
+  file_filter = fopen("C:\\Users\\lazar\\Documents\\32bit\\filter_float.bin", "rb");
+  if(file_filter == NULL)
+  {
+    printf("Could not open file.\n");
+    return 1;
+  }
+  fread(filter, sizeof(filter), sizeof(filter)/sizeof(float), file_filter);
+  fclose(file_filter);
+  
+  printf("Reading data from files finished...\r\n");
+  
+//  /**
+//  * Reading filter samples to buffer
+//  */
+//  file_sample = fopen("C:\\Users\\lazar\\Documents\\32bit\\filter_float.bin", "rb");
+//  if(file_sample == NULL)
+//  {
+//    printf("Could not open file.\n");
+//    return 1;
+//  }
+//  fread(samples, sizeof(samples), sizeof(samples)/sizeof(float), file_sample);
+//  fclose(file_sample);
+//  
+//  printf("Reading data from files finished...\r\n");
+  
+
+  
   RCC_ClocksTypeDef RCC_Clocks;
   
   /* Initialize LEDs and User_Button on STM32F4-Discovery --------------------*/

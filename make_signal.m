@@ -4,7 +4,7 @@
 
 Fs = 50e3;              % Sampling frequency (1MHz)
 T = 1/Fs;               % Sampling period
-L = 2016;               % Length of signal
+L = 504;               % Length of signal
 t = (0:L-1)*T;          % Time vector
 
 Fs1 = 2000;             % 2kHz

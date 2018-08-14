@@ -221,6 +221,7 @@
                     <name>CCDefines</name>
                     <state>USE_STDPERIPH_DRIVER</state>
                     <state>STM32F4XX</state>
+                    <state>ARM_MATH_CM4</state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>
@@ -2066,6 +2067,24 @@
     </group>
     <group>
         <name>User</name>
+        <file>
+            <name>$PROJ_DIR$\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_cfft_radix4_f32.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_cfft_radix4_init_f32.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_f32.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_init_f32.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_rfft_f32.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_rfft_init_f32.c</name>
+        </file>
         <file>
             <name>$PROJ_DIR$\main.c</name>
         </file>

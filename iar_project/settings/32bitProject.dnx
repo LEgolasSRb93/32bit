@@ -39,7 +39,7 @@
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
     </StLinkDriver>
     <DebugChecksum>
-        <Checksum>2476618242</Checksum>
+        <Checksum>1020323739</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -144,14 +144,14 @@
         <mode>0</mode>
     </DisassembleMode>
     <Breakpoints2>
-        <Bp0>_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.31.5" 0 0 1 "" 0 "" 0</Bp0>
-        <Bp1>_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.32.5" 0 0 1 "" 0 "" 0</Bp1>
-        <Count>2</Count>
+        <Bp0>_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.126.5" 0 0 1 "" 0 "" 0</Bp0>
+        <Count>1</Count>
     </Breakpoints2>
     <Aliases>
-        <A0>_ "D:\Jenkins\jobs\auxCMSIS\workspace\arm\auxCMSIS\stage\build_dsp_lib\arm\CMSIS\DSP\Source\FilteringFunctions\arm_fir_init_f32.c" "C:\Users\lazarc\Documents\32bit\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_init_f32.c"</A0>
-        <A1>_ "D:\Jenkins\jobs\auxCMSIS\workspace\arm\auxCMSIS\stage\build_dsp_lib\arm\inc\c\DLib_Product_string.h" ""</A1>
-        <Count>2</Count>
+        <A0>_ "C:\Users\lazarc\Documents\32bit\iar_project\main.c" "C:\Users\lazar\Documents\32bit\iar_project\main.c"</A0>
+        <A1>_ "D:\Jenkins\jobs\auxCMSIS\workspace\arm\auxCMSIS\stage\build_dsp_lib\arm\CMSIS\DSP\Source\FilteringFunctions\arm_fir_init_f32.c" "C:\Users\lazar\Documents\32bit\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_init_f32.c"</A1>
+        <A2>_ "D:\Jenkins\jobs\auxCMSIS\workspace\arm\auxCMSIS\stage\build_dsp_lib\arm\inc\c\DLib_Product_string.h" ""</A2>
+        <Count>3</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
 </settings>
