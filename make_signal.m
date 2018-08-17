@@ -4,7 +4,7 @@
 
 Fs = 50e3;              % Sampling frequency (1MHz)
 T = 1/Fs;               % Sampling period
-L = 504;               % Length of signal
+L = 256;               % Length of signal
 t = (0:L-1)*T;          % Time vector
 
 Fs1 = 2000;             % 2kHz
@@ -115,8 +115,8 @@ X_Single = single(X);
 fwrite(samples_file, single(X), 'single');
 fclose(samples_file);
 
-filter_file = fopen('filter_float.bin','wb');
+filter_file = fopen('filterNorm_float.bin','wb');
 NUM_Single = single(NUM);
 %nbytes = fprintf(samples_file, '%f\n', single(NUM));
 fwrite(filter_file, single(NUM), 'single');
-fclose(samples_file);
+fclose(filter_file);

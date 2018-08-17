@@ -2068,10 +2068,19 @@
     <group>
         <name>User</name>
         <file>
-            <name>$PROJ_DIR$\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_cfft_radix4_f32.c</name>
+            <name>$PROJ_DIR$\arm_abs_f32.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_cfft_radix4_init_f32.c</name>
+            <name>$PROJ_DIR$\arm_cfft_f32.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\arm_cfft_radix8_f32.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\arm_common_tables.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\arm_const_structs.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_f32.c</name>
@@ -2080,10 +2089,34 @@
             <name>$PROJ_DIR$\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\DSP_Lib\Source\FilteringFunctions\arm_fir_init_f32.c</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\arm_max_f32.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\arm_mean_f32.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\arm_mult_f32.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\arm_offset_f32.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_rfft_f32.c</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\arm_rfft_fast_f32.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\arm_rfft_fast_init_f32.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\DSP_Lib\Source\TransformFunctions\arm_rfft_init_f32.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\arm_sub_f32.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\integer.h</name>
         </file>
         <file>
             <name>$PROJ_DIR$\main.c</name>
