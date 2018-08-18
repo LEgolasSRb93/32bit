@@ -5,6 +5,9 @@
 #include "arm_math.h"
 #include "arm_const_structs.h"
 #include "math.h"
+#include "time.h"
+#include "cycle_counter.h"
+#include "stm32f4xx_rcc.h"
 
 #define FILTER_SIZE 512
 #define SAMPLES_SIZE 512
@@ -12,7 +15,7 @@
 #define NFFT	512
 #define NSig 	512  	// Signal length
 
-#define FIR		0
+#define FIR		1
 
 
 static float32_t firStateF32[BLOCK_SIZE + FILTER_SIZE +1];
@@ -26,6 +29,10 @@ int main()
     float32_t filter[FILTER_SIZE];
     float32_t samples[SAMPLES_SIZE];
     float32_t output[SAMPLES_SIZE];
+    
+    RCC_ClocksTypeDef* Clocks;
+    RCC_GetClocksFreq(Clocks);
+   
 
     #if FIR
     arm_fir_instance_f32 S;
@@ -44,7 +51,7 @@ int main()
     uint32_t doBitReverse = 1;
     #endif
 
-
+    reset_timer();
 
     #if FIR
     /**
@@ -72,7 +79,9 @@ int main()
     fclose(fp);
 
     printf("Reading data from files finished...\r\n");
-
+	
+    start_timer();
+    
     /**
     * Perform filtering function from arms library
     */
@@ -82,6 +91,8 @@ int main()
     {
         arm_fir_f32(&S, samples + (i*blockSize), output + (i*blockSize), blockSize);
     }
+    
+    stop_timer();
 
     printf("Filtering with CMSIS filter function finished...\r\n");
 
@@ -144,6 +155,8 @@ int main()
 
     #endif
 
+    printf("%d\r\n", get_num_cycles()); ///Clocks.SYSCLK);
+    
     /**
     * Put results in file
     */

@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.22.2.15995/W32 for ARM                17/Aug/2018  15:40:15
+# IAR ELF Linker V8.22.2.15995/W32 for ARM                18/Aug/2018  14:41:55
 # Copyright 2007-2018 IAR Systems AB.
 #
 #    Output file  =  
@@ -8,7 +8,7 @@
 #    Map file     =  
 #        C:\Users\lazar\Documents\32bit\iar_project\Debug\List\32bitProject.map
 #    Command line =  
-#        -f C:\Users\lazar\AppData\Local\Temp\EW6CC0.tmp
+#        -f C:\Users\lazar\AppData\Local\Temp\EWB0D4.tmp
 #        (C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\arm_abs_f32.o
 #        C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\arm_cfft_f32.o
 #        C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\arm_cfft_radix8_f32.o
@@ -25,12 +25,15 @@
 #        C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\arm_rfft_fast_init_f32.o
 #        C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\arm_rfft_init_f32.o
 #        C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\arm_sub_f32.o
+#        C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\cycle_counter.o
 #        C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\main.o
 #        C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\misc.o
 #        C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\startup_stm32f4xx.o
 #        C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\stm32f4_discovery.o
 #        C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\stm32f4xx_gpio.o
 #        C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\stm32f4xx_it.o
+#        C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\stm32f4xx_rcc.o
+#        C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\stm32f4xx_tim.o
 #        C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\system_stm32f4xx.o
 #        -o
 #        C:\Users\lazar\Documents\32bit\iar_project\Debug\Exe\32bitProject.out
@@ -91,7 +94,7 @@ No sections matched the following patterns:
   .intvec            ro code  0x08000000   0x188  startup_stm32f4xx.o [1]
                             - 0x08000188   0x188
 
-"P1":                                     0x5279
+"P1":                                     0x34fb
   .text              ro code  0x08000188   0xe22  xprintffull_nomb.o [3]
   .text              ro code  0x08000fac    0x16  strchr.o [6]
   .text              ro code  0x08000fc4    0x40  xfail_s.o [3]
@@ -117,195 +120,198 @@ No sections matched the following patterns:
   .text              ro code  0x08001c68    0x14  exit.o [7]
   .text              ro code  0x08001c7c    0x7c  iarttio.o [7]
   .text              ro code  0x08001cf8    0x3c  XShttio.o [3]
-  .text              ro code  0x08001d34   0xb1c  arm_cfft_f32.o [1]
-  .text              ro code  0x08002850   0xa08  arm_cfft_radix8_f32.o [1]
-  .text              ro code  0x08003258    0xc0  arm_bitreversal2.o [4]
-  .rodata            const    0x08003318   0x800  arm_common_tables.o [1]
-  .rodata            const    0x08003b18   0x370  arm_common_tables.o [1]
-  .text              ro code  0x08003e88   0x250  main.o [1]
-  .text              ro code  0x080040d8    0x2a  fopen.o [3]
-  .text              ro code  0x08004104    0x28  printf.o [3]
-  .text              ro code  0x0800412c    0x8c  fread.o [3]
-  .text              ro code  0x080041b8    0x7e  fclose.o [3]
-  .text              ro code  0x08004236    0xba  fwrite.o [3]
-  .text              ro code  0x080042f0    0xc4  xfofind.o [3]
-  .text              ro code  0x080043b4   0x138  xfoprep.o [3]
-  .text              ro code  0x080044ec    0xb6  xfrprep.o [3]
-  .text              ro code  0x080045a4    0xac  fflush.o [3]
-  .text              ro code  0x08004650     0x4  heaptramp0.o [3]
-  .text              ro code  0x08004654    0x18  close.o [7]
-  .text              ro code  0x0800466c    0x14  remove.o [7]
-  .text              ro code  0x08004680    0xb4  xfwprep.o [3]
-  .text              ro code  0x08004734   0x140  heap0.o [3]
-  .text              ro code  0x08004874    0x4c  xfopen.o [3]
-  .text              ro code  0x080048c0    0x30  read.o [7]
-  .text              ro code  0x080048f0    0x10  write.o [7]
-  .text              ro code  0x08004900   0x110  XShHandles.o [3]
-  .text              ro code  0x08004a10    0x24  fseek.o [3]
-  .text              ro code  0x08004a34    0x2c  xgetmemchunk.o [3]
-  .text              ro code  0x08004a60    0x48  open.o [7]
-  .text              ro code  0x08004aa8    0x1e  dwrite.o [7]
-  .text              ro code  0x08004ac6    0xd8  xfspos.o [3]
-  .text              ro code  0x08004b9e    0x20  iarwstd.o [7]
-  .text              ro code  0x08004bbe    0x22  iarwrite.o [7]
-  .text              ro code  0x08004be0     0xc  xfgpos.o [3]
-  .text              ro code  0x08004bec    0x4a  lseek.o [7]
-  .text              ro code  0x08004c38   0x154  system_stm32f4xx.o [1]
-  .text              ro code  0x08004d8c    0x9c  packbits_init.o [6]
-  .text              ro code  0x08004e28    0x54  fputc.o [3]
-  .text              ro code  0x08004e7c    0x40  zero_init3.o [6]
-  .text              ro code  0x08004ebc    0x3c  xcloseall.o [3]
-  .rodata            const    0x08004ef8    0x34  main.o [1]
-  .rodata            const    0x08004f2c    0x34  main.o [1]
-  .rodata            const    0x08004f60    0x34  main.o [1]
-  .rodata            const    0x08004f94    0x30  main.o [1]
-  .rodata            const    0x08004fc4    0x30  main.o [1]
-  .rodata            const    0x08004ff4    0x2c  main.o [1]
-  .rodata            const    0x08005020    0x28  main.o [1]
-  .text              ro code  0x08005048    0x28  data_init.o [6]
-  .text              ro code  0x08005070    0x22  fpinit_M.o [5]
-  .iar.init_table    const    0x08005094    0x2c  - Linker created -
-  .rodata            const    0x080050c0    0x20  main.o [1]
-  .rodata            const    0x080050e0    0x20  main.o [1]
-  .rodata            const    0x08005100    0x20  main.o [1]
-  .text              ro code  0x08005120    0x1e  cmain.o [6]
-  .text              ro code  0x0800513e     0x4  low_level_init.o [3]
-  .text              ro code  0x08005142     0x4  exit.o [3]
-  .text              ro code  0x08005148     0xe  cexit.o [6]
-  .text              ro code  0x08005156    0x1a  stm32f4xx_it.o [1]
-  .rodata            const    0x08005170    0x18  main.o [1]
-  .text              ro code  0x08005188    0x16  xprout.o [3]
-  .text              ro code  0x080051a0     0xc  putchar.o [3]
-  .rodata            const    0x080051ac    0x10  arm_const_structs.o [1]
-  .text              ro code  0x080051bc    0x10  startup_stm32f4xx.o [1]
-  .text              ro code  0x080051cc     0xc  cstartup_M.o [6]
-  .rodata            const    0x080051d8     0x4  xlocale_c.o [3]
-  .text              ro code  0x080051dc     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080051e0     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080051e4     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080051e8     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080051ec     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080051f0     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080051f4     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080051f8     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080051fc     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005200     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005204     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005208     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x0800520c     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005210     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005214     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005218     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x0800521c     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005220     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005224     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005228     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x0800522c     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005230     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005234     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005238     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x0800523c     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005240     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005244     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005248     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x0800524c     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005250     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005254     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005258     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x0800525c     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005260     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005264     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005268     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x0800526c     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005270     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005274     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005278     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x0800527c     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005280     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005284     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005288     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x0800528c     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005290     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005294     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005298     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x0800529c     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052a0     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052a4     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052a8     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052ac     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052b0     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052b4     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052b8     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052bc     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052c0     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052c4     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052c8     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052cc     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052d0     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052d4     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052d8     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052dc     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052e0     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052e4     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052e8     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052ec     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052f0     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052f4     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052f8     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080052fc     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005300     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005304     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005308     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x0800530c     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005310     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005314     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005318     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x0800531c     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005320     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005324     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005328     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x0800532c     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005330     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005334     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005338     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x0800533c     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005340     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005344     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x08005348     0x0  cstart_closeall.o [6]
-  .rodata            const    0x08005348     0x0  zero_init3.o [6]
-  .rodata            const    0x08005348     0x0  packbits_init.o [6]
-  Initializer bytes  const    0x08005348    0xb9  <for P4 s0>
-                            - 0x08005401  0x5279
+  .text              ro code  0x08001d34   0x260  arm_fir_f32.o [1]
+  .text              ro code  0x08001f94   0x154  main.o [1]
+  .text              ro code  0x080020e8   0x12c  stm32f4xx_rcc.o [1]
+  .text              ro code  0x08002214    0x64  cycle_counter.o [1]
+  .text              ro code  0x08002278    0x2a  fopen.o [3]
+  .text              ro code  0x080022a4    0x28  printf.o [3]
+  .text              ro code  0x080022cc    0x8c  fread.o [3]
+  .text              ro code  0x08002358    0x7e  fclose.o [3]
+  .text              ro code  0x080023d6    0x32  arm_fir_init_f32.o [1]
+  .text              ro code  0x08002408    0xba  fwrite.o [3]
+  .text              ro code  0x080024c4    0xc4  xfofind.o [3]
+  .text              ro code  0x08002588   0x138  xfoprep.o [3]
+  .text              ro code  0x080026c0    0xb6  xfrprep.o [3]
+  .text              ro code  0x08002778    0xac  fflush.o [3]
+  .text              ro code  0x08002824     0x4  heaptramp0.o [3]
+  .text              ro code  0x08002828    0x18  close.o [7]
+  .text              ro code  0x08002840    0x14  remove.o [7]
+  .text              ro code  0x08002854    0x66  ABImemset.o [6]
+  .text              ro code  0x080028ba    0xb4  xfwprep.o [3]
+  .text              ro code  0x08002970   0x140  heap0.o [3]
+  .text              ro code  0x08002ab0    0x4c  xfopen.o [3]
+  .text              ro code  0x08002afc    0x30  read.o [7]
+  .text              ro code  0x08002b2c    0x10  write.o [7]
+  .text              ro code  0x08002b3c   0x110  XShHandles.o [3]
+  .text              ro code  0x08002c4c    0x24  fseek.o [3]
+  .text              ro code  0x08002c70    0x2c  xgetmemchunk.o [3]
+  .text              ro code  0x08002c9c    0x48  open.o [7]
+  .text              ro code  0x08002ce4    0x1e  dwrite.o [7]
+  .text              ro code  0x08002d02    0xd8  xfspos.o [3]
+  .text              ro code  0x08002dda    0x20  iarwstd.o [7]
+  .text              ro code  0x08002dfa    0x22  iarwrite.o [7]
+  .text              ro code  0x08002e1c     0xc  xfgpos.o [3]
+  .text              ro code  0x08002e28    0x4a  lseek.o [7]
+  .text              ro code  0x08002e74   0x154  system_stm32f4xx.o [1]
+  .text              ro code  0x08002fc8    0xc0  arm_bitreversal2.o [4]
+  .text              ro code  0x08003088    0x9c  packbits_init.o [6]
+  .text              ro code  0x08003124    0x54  fputc.o [3]
+  .text              ro code  0x08003178    0x40  zero_init3.o [6]
+  .text              ro code  0x080031b8    0x3c  xcloseall.o [3]
+  .rodata            const    0x080031f4    0x34  main.o [1]
+  .rodata            const    0x08003228    0x34  main.o [1]
+  .rodata            const    0x0800325c    0x34  main.o [1]
+  .rodata            const    0x08003290    0x30  main.o [1]
+  .rodata            const    0x080032c0    0x2c  main.o [1]
+  .rodata            const    0x080032ec    0x28  main.o [1]
+  .text              ro code  0x08003314    0x28  data_init.o [6]
+  .text              ro code  0x0800333c    0x22  fpinit_M.o [5]
+  .iar.init_table    const    0x08003360    0x2c  - Linker created -
+  .text              ro code  0x0800338c    0x1e  cmain.o [6]
+  .text              ro code  0x080033aa     0x4  low_level_init.o [3]
+  .text              ro code  0x080033ae     0x4  exit.o [3]
+  .text              ro code  0x080033b4     0xe  cexit.o [6]
+  .text              ro code  0x080033c2    0x1a  stm32f4xx_it.o [1]
+  .rodata            const    0x080033dc    0x18  main.o [1]
+  .text              ro code  0x080033f4    0x16  xprout.o [3]
+  .text              ro code  0x0800340c     0xc  putchar.o [3]
+  .text              ro code  0x08003418    0x10  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003428     0xc  cstartup_M.o [6]
+  .rodata            const    0x08003434     0x8  main.o [1]
+  .rodata            const    0x0800343c     0x4  xlocale_c.o [3]
+  .text              ro code  0x08003440     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003444     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003448     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x0800344c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003450     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003454     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003458     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x0800345c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003460     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003464     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003468     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x0800346c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003470     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003474     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003478     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x0800347c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003480     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003484     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003488     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x0800348c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003490     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003494     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003498     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x0800349c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034a0     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034a4     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034a8     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034ac     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034b0     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034b4     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034b8     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034bc     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034c0     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034c4     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034c8     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034cc     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034d0     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034d4     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034d8     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034dc     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034e0     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034e4     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034e8     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034ec     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034f0     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034f4     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034f8     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080034fc     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003500     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003504     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003508     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x0800350c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003510     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003514     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003518     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x0800351c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003520     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003524     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003528     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x0800352c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003530     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003534     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003538     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x0800353c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003540     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003544     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003548     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x0800354c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003550     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003554     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003558     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x0800355c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003560     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003564     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003568     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x0800356c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003570     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003574     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003578     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x0800357c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003580     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003584     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003588     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x0800358c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003590     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003594     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003598     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x0800359c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080035a0     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080035a4     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080035a8     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x080035ac     0x0  cstart_closeall.o [6]
+  .rodata            const    0x080035ac     0x0  zero_init3.o [6]
+  .rodata            const    0x080035ac     0x0  packbits_init.o [6]
+  Initializer bytes  const    0x080035ac    0xd7  <for P4 s0>
+                            - 0x08003683  0x34fb
 
 "P3":                                     0x2000
   CSTACK                      0x10000000  0x2000  <Block>
     CSTACK           uninit   0x10000000  0x2000  <Block tail>
                             - 0x10002000  0x2000
 
-"P4", part 1 of 3:                         0x138
-  P4 s0                       0x20000000   0x138  <Init block>
+"P4", part 1 of 3:                         0x158
+  P4 s0                       0x20000000   0x158  <Init block>
     .data            inited   0x20000000    0x48  xfiles.o [3]
     .data            inited   0x20000048    0x48  xfiles.o [3]
     .data            inited   0x20000090    0x48  xfiles.o [3]
     .data            inited   0x200000d8    0x38  xlocale_c.o [3]
     .data            inited   0x20000110    0x20  xfiles.o [3]
-    .data            inited   0x20000130     0x8  XShttio.o [3]
-                            - 0x20000138   0x138
+    .data            inited   0x20000130    0x10  stm32f4xx_rcc.o [1]
+    .data            inited   0x20000140     0x8  XShttio.o [3]
+    .data            inited   0x20000148     0x4  cycle_counter.o [1]
+    .data            inited   0x2000014c     0x4  cycle_counter.o [1]
+    .data            inited   0x20000150     0x4  cycle_counter.o [1]
+    .data            inited   0x20000154     0x4  cycle_counter.o [1]
+                            - 0x20000158   0x158
 
-"P4", part 2 of 3:                         0x134
-  .bss               zero     0x20000138    0x80  XShHandles.o [3]
-  .bss               zero     0x200001b8    0x50  xfiles.o [3]
-  .bss               zero     0x20000208    0x50  xfiles.o [3]
-  .bss               zero     0x20000258     0x8  heap0.o [3]
-  .bss               zero     0x20000260     0x4  xfail_s.o [3]
-  .bss               zero     0x20000264     0x4  xgetmemchunk.o [3]
-  .bss               zero     0x20000268     0x1  XShttio.o [3]
-                            - 0x20000269   0x131
+"P4", part 2 of 3:                         0x978
+  .bss               zero     0x20000158   0x844  main.o [1]
+  .bss               zero     0x2000099c    0x80  XShHandles.o [3]
+  .bss               zero     0x20000a1c    0x50  xfiles.o [3]
+  .bss               zero     0x20000a6c    0x50  xfiles.o [3]
+  .bss               zero     0x20000abc     0x8  heap0.o [3]
+  .bss               zero     0x20000ac4     0x4  xfail_s.o [3]
+  .bss               zero     0x20000ac8     0x4  xgetmemchunk.o [3]
+  .bss               zero     0x20000acc     0x1  XShttio.o [3]
+                            - 0x20000acd   0x975
 
 "P4", part 3 of 3:                        0x2000
-  HEAP                        0x20000270  0x2000  <Block>
-    HEAP             uninit   0x20000270  0x2000  <Block tail>
-                            - 0x20002270  0x2000
+  HEAP                        0x20000ad0  0x2000  <Block>
+    HEAP             uninit   0x20000ad0  0x2000  <Block tail>
+                            - 0x20002ad0  0x2000
 
 
 *******************************************************************************
@@ -315,14 +321,14 @@ No sections matched the following patterns:
           Address     Size
           -------     ----
 Zero (__iar_zero_init3)
-    1 destination range, total size 0x131:
-          0x20000138  0x131
+    1 destination range, total size 0x975:
+          0x20000158  0x975
 
 Copy/packbits (__iar_packbits_init3)
-    1 source range, total size 0xb9 (59% of destination):
-          0x08005348   0xb9
-    1 destination range, total size 0x138:
-          0x20000000  0x138
+    1 source range, total size 0xd7 (62% of destination):
+          0x080035ac   0xd7
+    1 destination range, total size 0x158:
+          0x20000000  0x158
 
 
 
@@ -330,116 +336,117 @@ Copy/packbits (__iar_packbits_init3)
 *** MODULE SUMMARY
 ***
 
-    Module                 ro code  ro data  rw data
-    ------                 -------  -------  -------
+    Module               ro code  ro data  rw data
+    ------               -------  -------  -------
 C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj: [1]
-    arm_cfft_f32.o           2 844
-    arm_cfft_radix8_f32.o    2 568
-    arm_common_tables.o               2 928
-    arm_const_structs.o                  16
-    main.o                     592      456
-    startup_stm32f4xx.o        772
-    stm32f4xx_it.o              26
-    system_stm32f4xx.o         340
-    ------------------------------------------------
-    Total:                   7 142    3 400
+    arm_fir_f32.o            608
+    arm_fir_init_f32.o        50
+    cycle_counter.o          100       10       16
+    main.o                   340      320    2 116
+    startup_stm32f4xx.o      772
+    stm32f4xx_it.o            26
+    stm32f4xx_rcc.o          300       10       16
+    system_stm32f4xx.o       340
+    ----------------------------------------------
+    Total:                 2 536      340    2 148
 
 command line: [2]
-    ------------------------------------------------
+    ----------------------------------------------
     Total:
 
 dl7M_tlf.a: [3]
-    XShHandles.o               272               128
-    XShttio.o                   60        5        9
-    abort.o                      6
-    exit.o                       4
-    fclose.o                   126
-    fflush.o                   172
-    fopen.o                     42
-    fputc.o                     84
-    fread.o                    140
-    fseek.o                     36
-    fwrite.o                   186
-    heap0.o                    320                 8
-    heaptramp0.o                 4
-    low_level_init.o             4
-    printf.o                    40
-    putchar.o                   12
-    xcloseall.o                 60
-    xfail_s.o                   64                 4
-    xfgpos.o                    12
-    xfiles.o                            147      408
-    xfofind.o                  196
-    xfopen.o                    76
-    xfoprep.o                  312
-    xfrprep.o                  182
-    xfspos.o                   216
-    xfwprep.o                  180
-    xgetmemchunk.o              44                 4
-    xlocale_c.o                  8       37       56
-    xprintffull_nomb.o       3 618
-    xprout.o                    22
-    ------------------------------------------------
-    Total:                   6 498      189      617
+    XShHandles.o             272               128
+    XShttio.o                 60        5        9
+    abort.o                    6
+    exit.o                     4
+    fclose.o                 126
+    fflush.o                 172
+    fopen.o                   42
+    fputc.o                   84
+    fread.o                  140
+    fseek.o                   36
+    fwrite.o                 186
+    heap0.o                  320                 8
+    heaptramp0.o               4
+    low_level_init.o           4
+    printf.o                  40
+    putchar.o                 12
+    xcloseall.o               60
+    xfail_s.o                 64                 4
+    xfgpos.o                  12
+    xfiles.o                          155      408
+    xfofind.o                196
+    xfopen.o                  76
+    xfoprep.o                312
+    xfrprep.o                182
+    xfspos.o                 216
+    xfwprep.o                180
+    xgetmemchunk.o            44                 4
+    xlocale_c.o                8       39       56
+    xprintffull_nomb.o     3 618
+    xprout.o                  22
+    ----------------------------------------------
+    Total:                 6 498      199      617
 
 iar_cortexM4lf_math.a: [4]
-    arm_bitreversal2.o         192
-    ------------------------------------------------
-    Total:                     192
+    arm_bitreversal2.o       192
+    ----------------------------------------------
+    Total:                   192
 
 m7M_tls.a: [5]
-    DblAdd.o                   360
-    DblCmpGe.o                  46
-    DblCmpLe.o                  46
-    DblDiv.o                   582
-    DblMul.o                   418
-    DblSub.o                   226
-    DblToS32.o                  58
-    DblToU32.o                  40
-    S32ToDbl.o                  34
-    U32ToDbl.o                  26
-    fpinit_M.o                  34
-    frexp.o                    112
-    ldexp.o                    314
-    ------------------------------------------------
-    Total:                   2 296
+    DblAdd.o                 360
+    DblCmpGe.o                46
+    DblCmpLe.o                46
+    DblDiv.o                 582
+    DblMul.o                 418
+    DblSub.o                 226
+    DblToS32.o                58
+    DblToU32.o                40
+    S32ToDbl.o                34
+    U32ToDbl.o                26
+    fpinit_M.o                34
+    frexp.o                  112
+    ldexp.o                  314
+    ----------------------------------------------
+    Total:                 2 296
 
 rt7M_tl.a: [6]
-    ABImemcpy.o                166
-    I64DivMod.o                558
-    I64DivZer.o                  2
-    cexit.o                     14
-    cmain.o                     30
+    ABImemcpy.o              166
+    ABImemset.o              102
+    I64DivMod.o              558
+    I64DivZer.o                2
+    cexit.o                   14
+    cmain.o                   30
     cstart_closeall.o
-    cstartup_M.o                12
-    data_init.o                 40
-    memchr.o                    88
-    packbits_init.o            156
-    strchr.o                    22
-    strlen.o                    54
-    zero_init3.o                64
-    ------------------------------------------------
-    Total:                   1 206
+    cstartup_M.o              12
+    data_init.o               40
+    memchr.o                  88
+    packbits_init.o          156
+    strchr.o                  22
+    strlen.o                  54
+    zero_init3.o              64
+    ----------------------------------------------
+    Total:                 1 308
 
 shb_l.a: [7]
-    close.o                     24
-    dwrite.o                    30
-    exit.o                      20
-    iarttio.o                  124
-    iarwrite.o                  34
-    iarwstd.o                   32
-    lseek.o                     74
-    open.o                      72
-    read.o                      48
-    remove.o                    20
-    write.o                     16
-    ------------------------------------------------
-    Total:                     494
+    close.o                   24
+    dwrite.o                  30
+    exit.o                    20
+    iarttio.o                124
+    iarwrite.o                34
+    iarwstd.o                 32
+    lseek.o                   74
+    open.o                    72
+    read.o                    48
+    remove.o                  20
+    write.o                   16
+    ----------------------------------------------
+    Total:                   494
 
-    Gaps                        42        2
-    Linker created                       44   16 384
-----------------------------------------------------
-    Grand Total:            17 870    3 635   17 001
+    Gaps                      46        2
+    Linker created                     44   16 384
+--------------------------------------------------
+    Grand Total:          13 370      585   19 149
 
 
 *******************************************************************************
@@ -448,50 +455,56 @@ shb_l.a: [7]
 
 Entry                      Address   Size  Type      Object
 -----                      -------   ----  ----      ------
-.iar.init_table$$Base   0x08005094          --   Gb  - Linker created -
-.iar.init_table$$Limit  0x080050c0          --   Gb  - Linker created -
-?main                   0x08005121         Code  Gb  cmain.o [6]
-Aldata                  0x20000258    0x8  Data  Lc  heap0.o [3]
-BusFault_Handler        0x0800515d    0x2  Code  Gb  stm32f4xx_it.o [1]
+.iar.init_table$$Base   0x08003360          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x0800338c          --   Gb  - Linker created -
+?main                   0x0800338d         Code  Gb  cmain.o [6]
+APBAHBPrescTable        0x20000130   0x10  Data  Lc  stm32f4xx_rcc.o [1]
+Aldata                  0x20000abc    0x8  Data  Lc  heap0.o [3]
+BusFault_Handler        0x080033c9    0x2  Code  Gb  stm32f4xx_it.o [1]
 CSTACK$$Base            0x10000000          --   Gb  - Linker created -
 CSTACK$$Limit           0x10002000          --   Gb  - Linker created -
-DebugMon_Handler        0x08005163    0x2  Code  Gb  stm32f4xx_it.o [1]
-HEAP$$Base              0x20000270          --   Gb  - Linker created -
-HEAP$$Limit             0x20002270          --   Gb  - Linker created -
-HardFault_Handler       0x08005159    0x2  Code  Gb  stm32f4xx_it.o [1]
+DEMCR                   0x20000150    0x4  Data  Gb  cycle_counter.o [1]
+DWT_CONTROL             0x20000148    0x4  Data  Gb  cycle_counter.o [1]
+DWT_CYCCNT              0x2000014c    0x4  Data  Gb  cycle_counter.o [1]
+DebugMon_Handler        0x080033cf    0x2  Code  Gb  stm32f4xx_it.o [1]
+HEAP$$Base              0x20000ad0          --   Gb  - Linker created -
+HEAP$$Limit             0x20002ad0          --   Gb  - Linker created -
+HardFault_Handler       0x080033c5    0x2  Code  Gb  stm32f4xx_it.o [1]
+LAR                     0x20000154    0x4  Data  Gb  cycle_counter.o [1]
 LoadInt                 0x0800033b   0x7a  Code  Lc  xprintffull_nomb.o [3]
-MemManage_Handler       0x0800515b    0x2  Code  Gb  stm32f4xx_it.o [1]
-NMI_Handler             0x08005157    0x2  Code  Gb  stm32f4xx_it.o [1]
-PendSV_Handler          0x08005165    0x2  Code  Gb  stm32f4xx_it.o [1]
-Region$$Table$$Base     0x08005094          --   Gb  - Linker created -
-Region$$Table$$Limit    0x080050c0          --   Gb  - Linker created -
-SVC_Handler             0x08005161    0x2  Code  Gb  stm32f4xx_it.o [1]
-SetSysClock             0x08004c8b   0xce  Code  Lc  system_stm32f4xx.o [1]
-SysTick_Handler         0x08005167    0x2  Code  Gb  stm32f4xx_it.o [1]
-SystemInit              0x08004c39   0x52  Code  Gb  system_stm32f4xx.o [1]
-TIM1_CC_IRQHandler      0x0800516f    0x2  Code  Gb  stm32f4xx_it.o [1]
-TIM2_IRQHandler         0x08005169    0x2  Code  Gb  stm32f4xx_it.o [1]
-TIM3_IRQHandler         0x0800516b    0x2  Code  Gb  stm32f4xx_it.o [1]
-TIM4_IRQHandler         0x0800516d    0x2  Code  Gb  stm32f4xx_it.o [1]
-UsageFault_Handler      0x0800515f    0x2  Code  Gb  stm32f4xx_it.o [1]
-_Close_all              0x08004ebd   0x3c  Code  Gb  xcloseall.o [3]
+MemManage_Handler       0x080033c7    0x2  Code  Gb  stm32f4xx_it.o [1]
+NMI_Handler             0x080033c3    0x2  Code  Gb  stm32f4xx_it.o [1]
+PendSV_Handler          0x080033d1    0x2  Code  Gb  stm32f4xx_it.o [1]
+RCC_GetClocksFreq       0x080020e9  0x118  Code  Gb  stm32f4xx_rcc.o [1]
+Region$$Table$$Base     0x08003360          --   Gb  - Linker created -
+Region$$Table$$Limit    0x0800338c          --   Gb  - Linker created -
+SVC_Handler             0x080033cd    0x2  Code  Gb  stm32f4xx_it.o [1]
+SetSysClock             0x08002ec7   0xce  Code  Lc  system_stm32f4xx.o [1]
+SysTick_Handler         0x080033d3    0x2  Code  Gb  stm32f4xx_it.o [1]
+SystemInit              0x08002e75   0x52  Code  Gb  system_stm32f4xx.o [1]
+TIM1_CC_IRQHandler      0x080033db    0x2  Code  Gb  stm32f4xx_it.o [1]
+TIM2_IRQHandler         0x080033d5    0x2  Code  Gb  stm32f4xx_it.o [1]
+TIM3_IRQHandler         0x080033d7    0x2  Code  Gb  stm32f4xx_it.o [1]
+TIM4_IRQHandler         0x080033d9    0x2  Code  Gb  stm32f4xx_it.o [1]
+UsageFault_Handler      0x080033cb    0x2  Code  Gb  stm32f4xx_it.o [1]
+_Close_all              0x080031b9   0x3c  Code  Gb  xcloseall.o [3]
 _Files                  0x20000110   0x20  Data  Gb  xfiles.o [3]
-_Fofind                 0x080042f1   0x48  Code  Gb  xfofind.o [3]
-_Fofree                 0x08004339   0x78  Code  Gb  xfofind.o [3]
-_Fopen                  0x08004875   0x3c  Code  Gb  xfopen.o [3]
-_Fopen::rwacc           0x080048b0   0x10  Data  Lc  xfopen.o [3]
-_Foprep                 0x080043b5   0xf0  Code  Gb  xfoprep.o [3]
-_Foprep::init           0x080044a4   0x48  Data  Lc  xfoprep.o [3]
-_Frprep                 0x080044ed   0xb6  Code  Gb  xfrprep.o [3]
-_Fspos                  0x08004ac7   0xd8  Code  Gb  xfspos.o [3]
-_Fwprep                 0x08004681   0xb4  Code  Gb  xfwprep.o [3]
+_Fofind                 0x080024c5   0x48  Code  Gb  xfofind.o [3]
+_Fofree                 0x0800250d   0x78  Code  Gb  xfofind.o [3]
+_Fopen                  0x08002ab1   0x3c  Code  Gb  xfopen.o [3]
+_Fopen::rwacc           0x08002aec   0x10  Data  Lc  xfopen.o [3]
+_Foprep                 0x08002589   0xf0  Code  Gb  xfoprep.o [3]
+_Foprep::init           0x08002678   0x48  Data  Lc  xfoprep.o [3]
+_Frprep                 0x080026c1   0xb6  Code  Gb  xfrprep.o [3]
+_Fspos                  0x08002d03   0xd8  Code  Gb  xfspos.o [3]
+_Fwprep                 0x080028bb   0xb4  Code  Gb  xfwprep.o [3]
 _GenldFullNoMb          0x08000ca9  0x274  Code  Lc  xprintffull_nomb.o [3]
 _LdtobFullNoMb          0x0800087d  0x3fe  Code  Lc  xprintffull_nomb.o [3]
 _LitobFullNoMb          0x08000725  0x112  Code  Lc  xprintffull_nomb.o [3]
 _Locale_lconv           0x200000d8   0x38  Data  Lc  xlocale_c.o [3]
-_Nnl                    0x08004be1    0xc  Code  Gb  xfgpos.o [3]
+_Nnl                    0x08002e1d    0xc  Code  Gb  xfgpos.o [3]
 _PrintfFullNoMb         0x08000189  0x1a4  Code  Gb  xprintffull_nomb.o [3]
-_Prout                  0x08005189   0x16  Code  Gb  xprout.o [3]
+_Prout                  0x080033f5   0x16  Code  Gb  xprout.o [3]
 _PutcharsFullNoMb       0x08000f1d   0x2e  Code  Lc  xprintffull_nomb.o [3]
 _PutfldFullNoMb         0x080003b5  0x264  Code  Lc  xprintffull_nomb.o [3]
 _PuttxtFullNoMb         0x08000619  0x10c  Code  Lc  xprintffull_nomb.o [3]
@@ -507,48 +520,51 @@ __aeabi_ldiv0           0x08001afd         Code  Gb  I64DivZer.o [6]
 __aeabi_memcpy          0x08001469         Code  Gb  ABImemcpy.o [6]
 __aeabi_memcpy4         0x08001489         Code  Gb  ABImemcpy.o [6]
 __aeabi_memcpy8         0x08001489         Code  Gb  ABImemcpy.o [6]
+__aeabi_memset          0x08002855         Code  Gb  ABImemset.o [6]
 __aeabi_ui2d            0x08001ad1         Code  Gb  U32ToDbl.o [5]
 __aeabi_uldivmod        0x08001095         Code  Gb  I64DivMod.o [6]
-__basic_free            0x080047e1   0x16  Code  Gb  heap0.o [3]
-__basic_free_intern     0x080047f7   0x7a  Code  Lc  heap0.o [3]
-__basic_malloc          0x08004735   0x18  Code  Gb  heap0.o [3]
-__basic_malloc_intern   0x0800474d   0x94  Code  Lc  heap0.o [3]
-__cexit_closeall        0x0800514b         Code  Gb  cexit.o [6]
-__close                 0x08004655   0x18  Code  Gb  close.o [7]
-__cmain                 0x08005121         Code  Gb  cmain.o [6]
-__cstart_closeall       0x08005348         Data  Gb  cstart_closeall.o [6]
-__data_GetMemChunk      0x08004a35   0x2c  Code  Gb  xgetmemchunk.o [3]
+__basic_free            0x08002a1d   0x16  Code  Gb  heap0.o [3]
+__basic_free_intern     0x08002a33   0x7a  Code  Lc  heap0.o [3]
+__basic_malloc          0x08002971   0x18  Code  Gb  heap0.o [3]
+__basic_malloc_intern   0x08002989   0x94  Code  Lc  heap0.o [3]
+__cexit_closeall        0x080033b7         Code  Gb  cexit.o [6]
+__close                 0x08002829   0x18  Code  Gb  close.o [7]
+__cmain                 0x0800338d         Code  Gb  cmain.o [6]
+__cstart_closeall       0x080035ac         Data  Gb  cstart_closeall.o [6]
+__data_GetMemChunk      0x08002c71   0x2c  Code  Gb  xgetmemchunk.o [3]
 __data_GetMemChunk::start
-                        0x20000264    0x4  Data  Lc  xgetmemchunk.o [3]
-__dwrite                0x08004aa9   0x1e  Code  Gb  dwrite.o [7]
+                        0x20000ac8    0x4  Data  Lc  xgetmemchunk.o [3]
+__dwrite                0x08002ce5   0x1e  Code  Gb  dwrite.o [7]
 __exit                  0x08001c69   0x14  Code  Gb  exit.o [7]
 __iar_Fail_s            0x08000fc5   0x1c  Code  Gb  xfail_s.o [3]
 __iar_Memchr            0x0800103d         Code  Gb  memchr.o [6]
+__iar_Memset            0x08002855         Code  Gb  ABImemset.o [6]
+__iar_Memset_word       0x0800285d         Code  Gb  ABImemset.o [6]
 __iar_Stderr            0x20000090   0x48  Data  Gb  xfiles.o [3]
 __iar_Stdin             0x20000000   0x48  Data  Gb  xfiles.o [3]
 __iar_Stdout            0x20000048   0x48  Data  Gb  xfiles.o [3]
 __iar_Strchr            0x08000fad         Code  Gb  strchr.o [6]
 __iar_close_ttio        0x08001c7d   0x2c  Code  Gb  iarttio.o [7]
 __iar_dadd              0x0800178d         Code  Gb  DblSub.o [5]
-__iar_data_init3        0x08005049   0x28  Code  Gb  data_init.o [6]
+__iar_data_init3        0x08003315   0x28  Code  Gb  data_init.o [6]
 __iar_dsub              0x08001b01         Code  Gb  DblAdd.o [5]
 __iar_dsubStart         0x08001b13         Code  Gb  DblAdd.o [5]
 __iar_frexp             0x0800151d         Code  Gb  frexp.o [5]
 __iar_frexpl            0x0800151d         Code  Gb  frexp.o [5]
 __iar_get_ttio          0x08001ca9   0x4c  Code  Gb  iarttio.o [7]
-__iar_init_vfp          0x08005071         Code  Gb  fpinit_M.o [5]
+__iar_init_vfp          0x0800333d         Code  Gb  fpinit_M.o [5]
 __iar_ldexp64           0x080015e1         Code  Gb  ldexp.o [5]
 __iar_lookup_ttioh      0x08001d27    0x4  Code  Gb  XShttio.o [3]
-__iar_packbits_init3    0x08004d8d   0x9c  Code  Gb  packbits_init.o [6]
-__iar_program_start     0x080051cd         Code  Gb  cstartup_M.o [6]
+__iar_packbits_init3    0x08003089   0x9c  Code  Gb  packbits_init.o [6]
+__iar_program_start     0x08003429         Code  Gb  cstartup_M.o [6]
 __iar_scalbln64         0x080015e1         Code  Gb  ldexp.o [5]
 __iar_scalbn64          0x080015e1         Code  Gb  ldexp.o [5]
-__iar_sh_Discard        0x08004945   0x42  Code  Gb  XShHandles.o [3]
-__iar_sh_Init           0x08004901   0x44  Code  Gb  XShHandles.o [3]
-__iar_sh_Move           0x08004987   0x46  Code  Gb  XShHandles.o [3]
-__iar_sh_Pos            0x080049cd   0x3e  Code  Gb  XShHandles.o [3]
-__iar_sh_stdout         0x08004b9f   0x20  Code  Gb  iarwstd.o [7]
-__iar_sh_write          0x08004bbf   0x22  Code  Gb  iarwrite.o [7]
+__iar_sh_Discard        0x08002b81   0x42  Code  Gb  XShHandles.o [3]
+__iar_sh_Init           0x08002b3d   0x44  Code  Gb  XShHandles.o [3]
+__iar_sh_Move           0x08002bc3   0x46  Code  Gb  XShHandles.o [3]
+__iar_sh_Pos            0x08002c09   0x3e  Code  Gb  XShHandles.o [3]
+__iar_sh_stdout         0x08002ddb   0x20  Code  Gb  iarwstd.o [7]
+__iar_sh_write          0x08002dfb   0x22  Code  Gb  iarwrite.o [7]
 __iar_softfp___iar_frexp64
                         0x08001511         Code  Gb  frexp.o [5]
 __iar_softfp_frexp      0x08001511         Code  Gb  frexp.o [5]
@@ -558,58 +574,57 @@ __iar_systems$$module {Abs}
 __iar_ttio_guard_lock   0x08001cf9   0x1e  Code  Gb  XShttio.o [3]
 __iar_ttio_guard_unlock
                         0x08001d17   0x10  Code  Gb  XShttio.o [3]
-__iar_ttio_handles      0x20000130    0x8  Data  Lc  XShttio.o [3]
-__iar_zero_init3        0x08004e7d   0x40  Code  Gb  zero_init3.o [6]
-__low_level_init        0x0800513f    0x4  Code  Gb  low_level_init.o [3]
-__lseek                 0x08004bed   0x4a  Code  Gb  lseek.o [7]
-__open                  0x08004a61   0x48  Code  Gb  open.o [7]
-__read                  0x080048c1   0x30  Code  Gb  read.o [7]
+__iar_ttio_handles      0x20000140    0x8  Data  Lc  XShttio.o [3]
+__iar_zero_init3        0x08003179   0x40  Code  Gb  zero_init3.o [6]
+__low_level_init        0x080033ab    0x4  Code  Gb  low_level_init.o [3]
+__lseek                 0x08002e29   0x4a  Code  Gb  lseek.o [7]
+__open                  0x08002c9d   0x48  Code  Gb  open.o [7]
+__read                  0x08002afd   0x30  Code  Gb  read.o [7]
 __vector_table          0x08000000         Data  Gb  startup_stm32f4xx.o [1]
-__write                 0x080048f1   0x10  Code  Gb  write.o [7]
-_call_main              0x0800512d         Code  Gb  cmain.o [6]
-_exit                   0x08005149         Code  Gb  cexit.o [6]
-_main                   0x0800513b         Code  Gb  cmain.o [6]
+__write                 0x08002b2d   0x10  Code  Gb  write.o [7]
+_call_main              0x08003399         Code  Gb  cmain.o [6]
+_exit                   0x080033b5         Code  Gb  cexit.o [6]
+_main                   0x080033a7         Code  Gb  cmain.o [6]
 abort                   0x08001af5    0x6  Code  Gb  abort.o [3]
-armBitRevIndexTable256  0x08003b18  0x370  Data  Gb  arm_common_tables.o [1]
-arm_bitreversal_16      0x080032c3         Code  Gb  arm_bitreversal2.o [4]
-arm_bitreversal_32      0x08003259         Code  Gb  arm_bitreversal2.o [4]
-arm_cfft_f32            0x08002755   0xfc  Code  Gb  arm_cfft_f32.o [1]
-arm_cfft_radix8by2_f32  0x08001d35  0x2ca  Code  Gb  arm_cfft_f32.o [1]
-arm_cfft_radix8by4_f32  0x08001fff  0x756  Code  Gb  arm_cfft_f32.o [1]
-arm_cfft_sR_f32_len256  0x080051ac   0x10  Data  Gb  arm_const_structs.o [1]
-arm_radix8_butterfly_f32
-                        0x08002851  0xa08  Code  Gb  arm_cfft_radix8_f32.o [1]
-ebuf                    0x200001b8   0x50  Data  Lc  xfiles.o [3]
-exit                    0x08005143    0x4  Code  Gb  exit.o [3]
-fclose                  0x080041b9   0x7e  Code  Gb  fclose.o [3]
-fflush                  0x08004619   0x34  Code  Gb  fflush.o [3]
-fflushOne               0x080045a5   0x74  Code  Lc  fflush.o [3]
-fopen                   0x080040d9   0x2a  Code  Gb  fopen.o [3]
-fputc                   0x08004e29   0x54  Code  Gb  fputc.o [3]
-fread                   0x0800412d   0x8c  Code  Gb  fread.o [3]
-free                    0x08004651    0x4  Code  Gb  heaptramp0.o [3]
-fseek                   0x08004a11   0x24  Code  Gb  fseek.o [3]
-fwrite                  0x08004237   0xba  Code  Gb  fwrite.o [3]
+arm_bitreversal_16      0x08003033         Code  Gb  arm_bitreversal2.o [4]
+arm_bitreversal_32      0x08002fc9         Code  Gb  arm_bitreversal2.o [4]
+arm_fir_f32             0x08001d35  0x260  Code  Gb  arm_fir_f32.o [1]
+arm_fir_init_f32        0x080023d7   0x32  Code  Gb  arm_fir_init_f32.o [1]
+ebuf                    0x20000a1c   0x50  Data  Lc  xfiles.o [3]
+exit                    0x080033af    0x4  Code  Gb  exit.o [3]
+fclose                  0x08002359   0x7e  Code  Gb  fclose.o [3]
+fflush                  0x080027ed   0x34  Code  Gb  fflush.o [3]
+fflushOne               0x08002779   0x74  Code  Lc  fflush.o [3]
+firStateF32             0x20000158  0x844  Data  Lc  main.o [1]
+fopen                   0x08002279   0x2a  Code  Gb  fopen.o [3]
+fputc                   0x08003125   0x54  Code  Gb  fputc.o [3]
+fread                   0x080022cd   0x8c  Code  Gb  fread.o [3]
+free                    0x08002825    0x4  Code  Gb  heaptramp0.o [3]
+fseek                   0x08002c4d   0x24  Code  Gb  fseek.o [3]
+fwrite                  0x08002409   0xba  Code  Gb  fwrite.o [3]
+get_num_cycles          0x0800225b    0x8  Code  Gb  cycle_counter.o [1]
 ldexp                   0x080015e1         Code  Gb  ldexp.o [5]
 ldexpl                  0x080015e1         Code  Gb  ldexp.o [5]
 localeconv              0x08001aed    0x4  Code  Gb  xlocale_c.o [3]
-main                    0x08003e89  0x250  Code  Gb  main.o [1]
+main                    0x08001f95  0x154  Code  Gb  main.o [1]
 memchr                  0x0800103d         Code  Gb  memchr.o [6]
-obuf                    0x20000208   0x50  Data  Lc  xfiles.o [3]
-printf                  0x08004105   0x28  Code  Gb  printf.o [3]
-putchar                 0x080051a1    0xc  Code  Gb  putchar.o [3]
-remove                  0x0800466d   0x14  Code  Gb  remove.o [7]
-sFileInfo               0x20000138   0x80  Data  Lc  XShHandles.o [3]
+obuf                    0x20000a6c   0x50  Data  Lc  xfiles.o [3]
+printf                  0x080022a5   0x28  Code  Gb  printf.o [3]
+putchar                 0x0800340d    0xc  Code  Gb  putchar.o [3]
+remove                  0x08002841   0x14  Code  Gb  remove.o [7]
+reset_timer             0x08002215   0x2a  Code  Gb  cycle_counter.o [1]
+sFileInfo               0x2000099c   0x80  Data  Lc  XShHandles.o [3]
 scalbln                 0x080015e1         Code  Gb  ldexp.o [5]
 scalblnl                0x080015e1         Code  Gb  ldexp.o [5]
 scalbn                  0x080015e1         Code  Gb  ldexp.o [5]
 scalbnl                 0x080015e1         Code  Gb  ldexp.o [5]
 scale                   0x08000837   0x46  Code  Lc  xprintffull_nomb.o [3]
-sec_hand                0x20000260    0x4  Data  Lc  xfail_s.o [3]
+sec_hand                0x20000ac4    0x4  Data  Lc  xfail_s.o [3]
+start_timer             0x0800223f   0x12  Code  Gb  cycle_counter.o [1]
+stop_timer              0x08002251    0xa  Code  Gb  cycle_counter.o [1]
 strchr                  0x08000fad         Code  Gb  strchr.o [6]
 strlen                  0x08001005         Code  Gb  strlen.o [6]
-ttio_guard              0x20000268    0x1  Data  Lc  XShttio.o [3]
-twiddleCoef_256         0x08003318  0x800  Data  Gb  arm_common_tables.o [1]
+ttio_guard              0x20000acc    0x1  Data  Lc  XShttio.o [3]
 
 
 [1] = C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj
@@ -620,9 +635,9 @@ twiddleCoef_256         0x08003318  0x800  Data  Gb  arm_common_tables.o [1]
 [6] = rt7M_tl.a
 [7] = shb_l.a
 
-  17 870 bytes of readonly  code memory
-   3 635 bytes of readonly  data memory
-  17 001 bytes of readwrite data memory
+  13 370 bytes of readonly  code memory
+     585 bytes of readonly  data memory
+  19 149 bytes of readwrite data memory
 
 Errors: none
 Warnings: none

@@ -2389,6 +2389,12 @@
         <file>
             <name>$PROJ_DIR$\..\STM32F4-Discovery_FW_V1.1.0\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c</name>
         </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32F4-Discovery_FW_V1.1.0\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STM32F4-Discovery_FW_V1.1.0\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_tim.c</name>
+        </file>
     </group>
     <group>
         <name>User</name>
@@ -2439,6 +2445,9 @@
         </file>
         <file>
             <name>$PROJ_DIR$\arm_sub_f32.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cycle_counter.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\integer.h</name>

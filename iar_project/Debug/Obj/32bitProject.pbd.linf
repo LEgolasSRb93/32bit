@@ -1,4 +1,9 @@
 ﻿C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\32bitProject.pbd
+C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\stm32f4_discovery.pbi
+C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\misc.pbi
+C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\stm32f4xx_gpio.pbi
+C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\stm32f4xx_rcc.pbi
+C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\stm32f4xx_tim.pbi
 C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\arm_abs_f32.pbi
 C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\arm_cfft_f32.pbi
 C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\arm_cfft_radix8_f32.pbi
@@ -15,9 +20,7 @@ C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\arm_rfft_fast_f32.pbi
 C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\arm_rfft_fast_init_f32.pbi
 C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\arm_rfft_init_f32.pbi
 C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\arm_sub_f32.pbi
+C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\cycle_counter.pbi
 C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\main.pbi
-C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\misc.pbi
-C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\stm32f4_discovery.pbi
-C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\stm32f4xx_gpio.pbi
 C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\stm32f4xx_it.pbi
 C:\Users\lazar\Documents\32bit\iar_project\Debug\Obj\system_stm32f4xx.pbi

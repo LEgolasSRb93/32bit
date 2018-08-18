@@ -56,7 +56,7 @@ timeVal1 = toc;
 Z = filter(NUM, 1, X);
 timeVal2 = toc;
 
-disp(timeVal2-timeVal1);        % print time for using embedded MATLAB function
+disp(['Filter function MATLAB:', num2str(timeVal2-timeVal1)]);        % print time for using embedded MATLAB function
 %for filtering
 
 figure(4);
@@ -89,7 +89,7 @@ Z = Y.*F;
 z = ifft(Z);
 timeVal2 = toc;
 
-disp(timeVal2-timeVal1);        % print time for using FFT filtering
+disp(['FFT filtering MATLAB:', num2str(timeVal2-timeVal1)]);        % print time for using FFT filtering
 
 P2 = abs(Z/L);
 P1 = P2(1:L/2+1);
