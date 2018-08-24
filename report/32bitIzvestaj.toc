@@ -1,0 +1,7 @@
+\babel@toc {serbian}{}
+\contentsline {chapter}{\numberline {1}Uvod}{3}
+\contentsline {chapter}{\numberline {2}Opis sistema}{4}
+\contentsline {chapter}{\numberline {3}Softverska implementacija}{5}
+\contentsline {section}{\numberline {3.1}MATLAB implementacija}{5}
+\contentsline {section}{\numberline {3.2}Implementacija na mikrokontroleru}{6}
+\contentsline {chapter}{\numberline {4}Poredjenje rezultata}{9}
